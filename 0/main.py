@@ -11,7 +11,6 @@ def accept_connection(server_socket):
     while True:
         client_socket, addr = server_socket.accept()
         print(addr)
-        send_message(client_socket)
 
 
 def send_message(client_socket):
